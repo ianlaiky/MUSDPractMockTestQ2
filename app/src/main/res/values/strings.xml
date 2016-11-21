@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">PractTestQ2</string>
+    
+    
+    
+    <string-array name="contact">
+        <item>Call</item>
+        <item>Email</item>
+        <item>SMS</item>
+        <item>Whatsapp</item>
+
+
+    </string-array>
 </resources>
