@@ -15,6 +15,20 @@
         android:title="Register" />
 
     <item
+        android:id="@+id/hide"
+        android:title="hide"
+        />
+    <item
+        android:id="show"
+        android:title="show"
+        />
+
+
+    <group
+        android:id="@+id/hid"
+
+        >
+    <item
         android:id="@+id/pin"
         android:title="Manage PIN" >
 
@@ -36,7 +50,7 @@
 
     </item>
 
-
+    </group>
 
     <item
         android:id="@+id/about"
