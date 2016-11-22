@@ -19,7 +19,7 @@
         android:title="hide"
         />
     <item
-        android:id="show"
+        android:id="@+id/show"
         android:title="show"
         />
 
