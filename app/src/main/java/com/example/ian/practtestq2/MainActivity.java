@@ -2,6 +2,7 @@ package com.example.ian.practtestq2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayAdapter<CharSequence> ad;
     Spinner sp;
     boolean test = false;
+    Menu myMenu = null;
 
 
     @Override
@@ -34,9 +36,6 @@ public class MainActivity extends AppCompatActivity {
                 if (test == true) {
 
 
-
-
-
                     Toast.makeText(getApplicationContext(), sp.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
                 }
                 test = true;
@@ -52,11 +51,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        super.onCreateOptionsMenu(menu);
+        this.myMenu = menu;
 
 
 
-
-
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
     }
 
 

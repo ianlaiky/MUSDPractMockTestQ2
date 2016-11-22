@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
     <item
         android:id="@+id/login"
         android:title="Login"
+
 
         />
 
@@ -13,7 +16,27 @@
 
     <item
         android:id="@+id/pin"
-        android:title="Manage PIN" />
+        android:title="Manage PIN" >
+
+        <menu>
+
+            <item
+                android:id="change"
+                android:title="Change PIN"
+
+                />
+            <item
+                android:id="@+id/forgot"
+                android:title="Forogt PIN"
+                />
+
+
+        </menu>
+
+
+    </item>
+
+
 
     <item
         android:id="@+id/about"
