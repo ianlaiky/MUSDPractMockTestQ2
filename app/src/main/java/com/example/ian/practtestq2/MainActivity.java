@@ -3,6 +3,7 @@ package com.example.ian.practtestq2;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -59,11 +60,23 @@ public class MainActivity extends AppCompatActivity {
         this.myMenu = menu;
 
 
-
         getMenuInflater().inflate(R.menu.menu, menu);
+
+
         return true;
     }
 
+
+    public boolean onOptionsItemSelected(MenuItem menu) {
+
+        if (menu.getItemId() == R.id.hide) {
+            this.myMenu.setGroupVisible(R.id.hid, false);
+        } else if (menu.getItemId() == R.id.show) {
+            this.myMenu.setGroupVisible(R.id.hid, true);
+        }
+return true;
+
+    }
 
 
 }
