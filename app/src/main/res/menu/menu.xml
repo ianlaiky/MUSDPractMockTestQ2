@@ -21,13 +21,13 @@
         <menu>
 
             <item
-                android:id="change"
+                android:id="@+id/change"
                 android:title="Change PIN"
 
                 />
             <item
                 android:id="@+id/forgot"
-                android:title="Forogt PIN"
+                android:title="Forgot PIN"
                 />
 
 
