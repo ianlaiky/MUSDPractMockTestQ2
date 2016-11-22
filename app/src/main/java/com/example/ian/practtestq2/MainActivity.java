@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
                 if (test == true) {
 
 
+
+
+
                     Toast.makeText(getApplicationContext(), sp.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
                 }
                 test = true;
