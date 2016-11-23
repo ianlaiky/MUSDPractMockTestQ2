@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import static android.app.ProgressDialog.show;
+                                 import static android.app.ProgressDialog.show;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,12 +34,12 @@ public class MainActivity extends AppCompatActivity {
         sp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                if (test == true) {
 
 
-                    Toast.makeText(getApplicationContext(), sp.getSelectedItem().toString(), Toast.LENGTH_SHORT).show();
-                }
-                test = true;
+
+                    Toast.makeText(getApplicationContext(), sp.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
+
+
 
             }
 
