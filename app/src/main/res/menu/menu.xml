@@ -28,7 +28,7 @@
         android:id="@+id/hid"
 
         >
-    <item
+          <item
         android:id="@+id/pin"
         android:title="Manage PIN" >
 
