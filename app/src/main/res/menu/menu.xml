@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
+    <group android:id="@+id/hid"
+
+        >
+        <item
+            android:id="@+id/pin"
+            android:title="Manage PIN">
+
+            <menu>
+
+                <item
+                    android:id="@+id/change"
+                    android:title="Change PIN"
+
+                    />
+                <item
+                    android:id="@+id/forgot"
+                    android:title="Forgot PIN" />
+
+
+            </menu>
+
+
+        </item>
+
+    </group>
     <item
         android:id="@+id/login"
-        android:title="Login"
-
-
-        />
+        android:title="Login" />
 
 
     <item
@@ -16,41 +39,11 @@
 
     <item
         android:id="@+id/hide"
-        android:title="hide"
-        />
+        android:title="hide" />
     <item
         android:id="@+id/show"
-        android:title="show"
-        />
+        android:title="show" />
 
-
-    <group
-        android:id="@+id/hid"
-
-        >
-          <item
-        android:id="@+id/pin"
-        android:title="Manage PIN" >
-
-        <menu>
-
-            <item
-                android:id="@+id/change"
-                android:title="Change PIN"
-
-                />
-            <item
-                android:id="@+id/forgot"
-                android:title="Forgot PIN"
-                />
-
-
-        </menu>
-
-
-    </item>
-
-    </group>
 
     <item
         android:id="@+id/about"
